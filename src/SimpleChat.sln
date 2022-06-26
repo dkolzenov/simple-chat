@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Api", "SimpleChat.Api\SimpleChat.Api.csproj", "{24689CC6-81D2-42A7-B7BB-0ED19AE37DBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Api", "SimpleChat.Api\SimpleChat.Api.csproj", "{24689CC6-81D2-42A7-B7BB-0ED19AE37DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Desktop", "SimpleChat.Desktop\SimpleChat.Desktop.csproj", "{DB802571-8107-4E39-BD19-335288CDCBC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{24689CC6-81D2-42A7-B7BB-0ED19AE37DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24689CC6-81D2-42A7-B7BB-0ED19AE37DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24689CC6-81D2-42A7-B7BB-0ED19AE37DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB802571-8107-4E39-BD19-335288CDCBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB802571-8107-4E39-BD19-335288CDCBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB802571-8107-4E39-BD19-335288CDCBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB802571-8107-4E39-BD19-335288CDCBC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

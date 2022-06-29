@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Api", "SimpleCha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Desktop", "SimpleChat.Desktop\SimpleChat.Desktop.csproj", "{DB802571-8107-4E39-BD19-335288CDCBC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Services", "SimpleChat.Services\SimpleChat.Services.csproj", "{3FBFAB96-2615-4083-BB80-CBE5C45DB817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Data", "SimpleChat.Data\SimpleChat.Data.csproj", "{21792446-63E8-40DF-9939-1E5FA0D482EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Models", "SimpleChat.Models\SimpleChat.Models.csproj", "{567B7D6E-B445-4BA4-BC5A-5CCB2D081C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat.Di", "SimpleChat.Di\SimpleChat.Di.csproj", "{EE28EEF4-3342-4782-8886-CC09A0E713F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{DB802571-8107-4E39-BD19-335288CDCBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB802571-8107-4E39-BD19-335288CDCBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB802571-8107-4E39-BD19-335288CDCBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBFAB96-2615-4083-BB80-CBE5C45DB817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBFAB96-2615-4083-BB80-CBE5C45DB817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBFAB96-2615-4083-BB80-CBE5C45DB817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBFAB96-2615-4083-BB80-CBE5C45DB817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21792446-63E8-40DF-9939-1E5FA0D482EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21792446-63E8-40DF-9939-1E5FA0D482EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21792446-63E8-40DF-9939-1E5FA0D482EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21792446-63E8-40DF-9939-1E5FA0D482EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567B7D6E-B445-4BA4-BC5A-5CCB2D081C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567B7D6E-B445-4BA4-BC5A-5CCB2D081C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567B7D6E-B445-4BA4-BC5A-5CCB2D081C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567B7D6E-B445-4BA4-BC5A-5CCB2D081C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE28EEF4-3342-4782-8886-CC09A0E713F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE28EEF4-3342-4782-8886-CC09A0E713F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE28EEF4-3342-4782-8886-CC09A0E713F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE28EEF4-3342-4782-8886-CC09A0E713F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

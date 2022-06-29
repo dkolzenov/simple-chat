@@ -7,7 +7,7 @@
     {
         Task<IList<TEntity>> GetAllAsync();
 
-        Task<bool> CreateAsync(TEntity entity);
+        Task<bool> AddAsync(TEntity entity);
 
         Task<bool> UpdateAsync(TEntity entity);
 

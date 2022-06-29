@@ -1,4 +1,4 @@
-﻿namespace SimpleChat.Data.Repositories
+﻿namespace SimpleChat.Data.Repositories.Base
 {
     using System.Threading.Tasks;
     using System.Collections.Generic;

@@ -1,6 +1,6 @@
-﻿namespace SimpleChat.Data.Entities
+﻿namespace SimpleChat.Models.Message
 {
-    public class Message
+    public class MessageModel
     {
         public int Id { get; set; }
 

@@ -1,8 +1,8 @@
 ﻿namespace SimpleChat.Data.Repositories.Interfaces
 {
-    using SimpleChat.Data.Entities;
+    using SimpleChat.Data.Entities.Message;
 
-    public interface IMessageRepository : IRepositoryBase<Message>
+    public interface IMessageRepository : IRepositoryBase<MessageEntity>
     {
     }
 }

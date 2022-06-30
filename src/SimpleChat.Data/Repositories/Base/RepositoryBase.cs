@@ -6,7 +6,7 @@
     using Microsoft.EntityFrameworkCore;
 
     using SimpleChat.Data.Repositories.Interfaces;
-    using SimpleChat.Data.Contexts;
+    using SimpleChat.Data.Contexts.ApplicationDb;
 
     public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class

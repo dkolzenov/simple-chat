@@ -1,7 +1,7 @@
 ﻿namespace SimpleChat.Api.Extensions
 {
     using Microsoft.EntityFrameworkCore;
-    using SimpleChat.Data.Contexts;
+    using SimpleChat.Data.Contexts.ApplicationDb;
 
     public static class DatabaseContextExtension
     {

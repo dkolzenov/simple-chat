@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomSqliteContext(builder.Configuration);
+builder.Services.AddCustomAutoMapper();
 
 var app = builder.Build();
 

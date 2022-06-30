@@ -9,8 +9,8 @@
     {
         Task<List<UserModel>> GetAllUsers();
 
-        void Connect(UserModel userModel);
+        Task<bool> Connect(UserModel userModel);
 
-        void Disconnect(UserModel userModel);
+        Task<bool> Disconnect(UserModel userModel);
     }
 }

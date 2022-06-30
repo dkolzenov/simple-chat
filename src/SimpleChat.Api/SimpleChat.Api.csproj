@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleChat.Data\SimpleChat.Data.csproj" />
+    <ProjectReference Include="..\SimpleChat.Di\SimpleChat.Di.csproj" />
+    <ProjectReference Include="..\SimpleChat.Services\SimpleChat.Services.csproj" />
   </ItemGroup>
 
 </Project>

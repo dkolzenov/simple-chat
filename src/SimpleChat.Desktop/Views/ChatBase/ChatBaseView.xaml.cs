@@ -2,10 +2,9 @@
 {
     using System.Windows;
 
-    /// <summary>
-    /// Логика взаимодействия для ChatBaseView.xaml
-    /// </summary>
-    public partial class ChatBaseView : Window
+    using SimpleChat.Desktop.Views.Interfaces;
+
+    public partial class ChatBaseView : Window, IRegisterableView
     {
         public ChatBaseView()
         {

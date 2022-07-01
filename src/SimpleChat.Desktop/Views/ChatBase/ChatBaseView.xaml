@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="ChatBaseView" Height="355" Width="670" MinWidth="640" MinHeight="355" MaxHeight="500" MaxWidth="850" Background="#FFDDE5F0">
+        Title="Chat Client" Height="355" Width="670" MinWidth="640" MinHeight="355" MaxHeight="500" MaxWidth="850" Background="#FFDDE5F0">
 
     <Window.Resources>
         <Style x:Key="FocusVisual">
@@ -119,9 +119,9 @@
                     </Button>
                 </Grid>
                 <ListBox Background="#FFDDE5F0" BorderBrush="{x:Null}">
-                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Right"  >Hello</ListBoxItem>
-                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Left"   >User_1: Wtf man</ListBoxItem>
-                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Left"   >User_2: Leave pls</ListBoxItem>
+                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Right"  >Hello everyone</ListBoxItem>
+                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Left"   >User_1: Hi</ListBoxItem>
+                    <ListBoxItem Style="{DynamicResource ListBoxItemStyle1}" HorizontalAlignment="Left"   >User_2: Welcome to general chat</ListBoxItem>
                 </ListBox>
             </Grid>
         </Grid>

@@ -2,10 +2,9 @@
 {
     using System.Windows;
 
-    /// <summary>
-    /// Логика взаимодействия для UserAuthorizationView.xaml
-    /// </summary>
-    public partial class UserAuthorizationView : Window
+    using SimpleChat.Desktop.Views.Interfaces;
+
+    public partial class UserAuthorizationView : Window, IRegisterableView
     {
         public UserAuthorizationView()
         {

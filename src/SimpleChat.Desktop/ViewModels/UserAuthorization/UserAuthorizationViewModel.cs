@@ -19,7 +19,7 @@
 
         private void InitializeCommand()
         {
-            ConnectCommand = new DelegateCommand();
+            ConnectCommand = new DelegateCommand(Connect);
         }
     }
 }

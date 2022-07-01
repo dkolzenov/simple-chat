@@ -22,7 +22,7 @@
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetAllUsers()
         {
-            var users = await _userService.GetAllUsers();
+            var users = await _userService.GetAllUsersAsync();
 
             return users;
         }

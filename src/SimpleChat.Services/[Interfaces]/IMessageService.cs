@@ -7,8 +7,8 @@
 
     public interface IMessageService
     {
-        Task<List<MessageModel>> GetAllMessages();
+        Task<List<MessageModel>> GetAllMessagesAsync();
 
-        void SendMessage(MessageModel messageModel);
+        Task<bool> SendMessageAsync(MessageModel messageModel);
     }
 }

@@ -18,7 +18,7 @@
             _context = context;
         }
 
-        public async Task<IList<TEntity>> GetAllAsync()
+        public async Task<List<TEntity>> GetAllAsync()
         {
             try
             {
@@ -30,7 +30,7 @@
             }
             catch (Exception ex)
             {
-                return await Task.FromException<IList<TEntity>>(ex);
+                return await Task.FromException<List<TEntity>>(ex);
             }
         }
 
@@ -88,7 +88,7 @@
             }
         }
 
-        public async Task<IList<TEntity>> QueryAsync(
+        public async Task<List<TEntity>> QueryAsync(
             params Func<TEntity, bool>[] predicates)
         {
             try
@@ -102,7 +102,7 @@
             }
             catch (Exception ex)
             {
-                return await Task.FromException<IList<TEntity>>(ex);
+                return await Task.FromException<List<TEntity>>(ex);
             }
         }
     }

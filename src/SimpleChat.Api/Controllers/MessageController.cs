@@ -22,7 +22,7 @@
         [HttpGet]
         public async Task<ActionResult<List<MessageModel>>> GetAllMessages()
         {
-            var messages = await _messageService.GetAllMessages();
+            var messages = await _messageService.GetAllMessagesAsync();
 
             return messages;
         }

@@ -4,8 +4,10 @@
 
     using SimpleChat.Data.Entities.Message;
     using SimpleChat.Data.Entities.User;
+    using SimpleChat.Data.Entities.Correspondence;
     using SimpleChat.Models.Message;
     using SimpleChat.Models.User;
+    using SimpleChat.Models.Correspondence;
 
     public class ApiMappingProfile : Profile
     {
@@ -15,6 +17,7 @@
 
             CreateMap<MessageEntity, MessageModel>();
             CreateMap<UserEntity, UserModel>();
+            CreateMap<CorrespondenceEntity, CorrespondenceModel>();
 
             #endregion
 
@@ -22,6 +25,7 @@
 
             CreateMap<MessageModel, MessageEntity>();
             CreateMap<UserModel, UserEntity>();
+            CreateMap<CorrespondenceModel, CorrespondenceEntity>();
 
             #endregion
         }

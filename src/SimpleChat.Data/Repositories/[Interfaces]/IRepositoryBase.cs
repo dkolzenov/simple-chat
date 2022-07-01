@@ -5,7 +5,7 @@
 
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
-        Task<IList<TEntity>> GetAllAsync();
+        Task<List<TEntity>> GetAllAsync();
 
         Task<bool> AddAsync(TEntity entity);
 
@@ -13,7 +13,7 @@
 
         Task<bool> RemoveAsync(TEntity entity);
 
-        Task<IList<TEntity>> QueryAsync(
+        Task<List<TEntity>> QueryAsync(
             params Func<TEntity, bool>[] predicates);
     }
 }

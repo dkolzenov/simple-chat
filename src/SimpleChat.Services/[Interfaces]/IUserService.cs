@@ -7,10 +7,10 @@
 
     public interface IUserService
     {
-        Task<List<UserModel>> GetAllUsers();
+        Task<List<UserModel>> GetAllUsersAsync();
 
-        void Connect(UserModel userModel);
+        Task<bool> ConnectAsync(UserModel userModel);
 
-        void Disconnect(UserModel userModel);
+        Task<bool> DisconnectAsync(UserModel userModel);
     }
 }

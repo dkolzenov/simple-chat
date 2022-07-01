@@ -1,8 +1,6 @@
 ﻿namespace SimpleChat.Data.Entities.Message
 {
-    using System.Collections.Generic;
-
-    using SimpleChat.Data.Entities.User;
+    using SimpleChat.Data.Entities.Correspondence;
 
     public class MessageEntity
     {
@@ -10,8 +8,6 @@
 
         public string Title { get; set; } = null!;
 
-        public UserEntity Origin { get; set; } = null!;
-
-        public List<UserEntity> Target { get; set; } = null!;
+        public CorrespondenceEntity Correspondence { get; set; } = null!;
     }
 }

@@ -1,14 +1,16 @@
-using Prism.Modularity;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+
 using SimpleChat.Api.Extensions;
 using SimpleChat.Di.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.ConfigureContainer<IModuleCatalog>(
-    catalog => catalog.AddModule<ApiDiModule>());
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(
+    builder => builder.RegisterModule(new ApiDiModule()));
 
-// Add services to the container.
-
+// Add services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,7 +19,6 @@ builder.Services.AddCustomAutoMapper();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

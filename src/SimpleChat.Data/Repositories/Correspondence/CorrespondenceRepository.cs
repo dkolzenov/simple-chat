@@ -8,7 +8,6 @@
     using SimpleChat.Data.Contexts.ApplicationDb;
     using SimpleChat.Data.Entities.User;
     using SimpleChat.Data.Entities.Correspondence;
-    using SimpleChat.Data.Entities.Message;
 
     public class CorrespondenceRepository : RepositoryBase<CorrespondenceEntity>, ICorrespondenceRepository
     {

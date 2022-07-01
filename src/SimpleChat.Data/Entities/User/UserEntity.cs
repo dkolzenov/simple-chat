@@ -1,5 +1,6 @@
 ﻿namespace SimpleChat.Data.Entities.User
 {
+    using System;
     using System.Collections.Generic;
 
     using SimpleChat.Data.Entities.Correspondence;

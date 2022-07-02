@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="User Authorization" Height="360" Width="260" MinHeight="340" MinWidth="260" MaxHeight="500" MaxWidth="340" Background="#FFDDE5F4" ShowInTaskbar="False" HorizontalAlignment="Left">
+        Title="{Binding Title}" Height="360" Width="260" MinHeight="340" MinWidth="260" MaxHeight="500" MaxWidth="340" Background="#FFDDE5F4" ShowInTaskbar="False" HorizontalAlignment="Left">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -15,7 +15,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Content="Enter to the chat" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Times new Roman" FontSize="25" Foreground="#FF19083D"/>
-        <Button Content="Connect" IsEnabled="False" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Background="#FFBE98E1" Foreground="#FF13021A" FontFamily="Times new Roman" FontSize="25" Width="120"/>
+        <Button Content="Connect" Command="{Binding ConnectCommand}" IsEnabled="True" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Background="#FFBE98E1" Foreground="#FF13021A" FontFamily="Times new Roman" FontSize="25" Width="120"/>
         <Grid/>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>

@@ -20,7 +20,7 @@
             services.BuildServiceProvider()
                 .GetService<ApplicationDbContext>()
                 !.Database
-                .Migrate(); // DB automigration on start enable
+                .EnsureCreated();
         }
     }
 }

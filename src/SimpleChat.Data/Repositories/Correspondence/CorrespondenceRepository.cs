@@ -8,9 +8,9 @@
     using SimpleChat.Data.Contexts.ApplicationDb;
     using SimpleChat.Data.Entities.User;
     using SimpleChat.Data.Entities.Correspondence;
-    using SimpleChat.Data.Entities.Message;
 
-    public class CorrespondenceRepository : RepositoryBase<CorrespondenceEntity>, ICorrespondenceRepository
+    public class CorrespondenceRepository
+        : RepositoryBase<CorrespondenceEntity>, ICorrespondenceRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -20,7 +20,8 @@
             _context = context;
         }
 
-        public async Task<CorrespondenceEntity> GetCorrespondenceByUsers(List<UserEntity> users)
+        public async Task<CorrespondenceEntity> GetCorrespondenceByUsers(
+            List<UserEntity> users)
         {
             try
             {

@@ -10,22 +10,20 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(
     builder => builder.RegisterModule(new ApiDiModule()));
 
-// Add services
+// Add services to the container.
+
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddCustomSqliteContext(builder.Configuration);
+builder.Services.AddCustomCorsPolicy(builder.Configuration);
 builder.Services.AddCustomAutoMapper();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+
+app.UseCustomCorsPolicy();
 
 app.UseAuthorization();
 

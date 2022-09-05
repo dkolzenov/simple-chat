@@ -9,7 +9,7 @@
     using SimpleChat.Models.Correspondence;
 
     [ApiController]
-    [Route("api/correspondences")]
+    [Route("api/correspondence")]
     public class CorrespondenceController : ControllerBase
     {
         private readonly ICorrespondenceService _correspondenceService;

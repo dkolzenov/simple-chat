@@ -9,6 +9,6 @@
     {
         Task<List<MessageModel>> GetAllMessagesAsync();
 
-        Task<bool> SendMessageAsync(MessageModel messageModel);
+        Task<MessageModel> AddMessageAsync(MessageModel messageModel);
     }
 }

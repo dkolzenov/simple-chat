@@ -7,6 +7,7 @@
 
     using SimpleChat.Services.Interfaces;
     using SimpleChat.Data.Repositories.Interfaces;
+    using SimpleChat.Data.Entities.Correspondence;
     using SimpleChat.Models.Correspondence;
 
     public class CorrespondenceService : ICorrespondenceService
@@ -27,8 +28,11 @@
         {
             try
             {
-                var correspondences = _mapper.Map<List<CorrespondenceModel>>(
-                    await _correspondenceRepository.GetAllAsync());
+                List<CorrespondenceEntity> result = await _correspondenceRepository
+                    .GetAllAsync();
+
+                var correspondences = _mapper
+                    .Map<List<CorrespondenceModel>>(result);
 
                 return correspondences;
             }

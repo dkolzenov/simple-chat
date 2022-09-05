@@ -28,8 +28,10 @@
         {
             try
             {
-                var messages = _mapper.Map<List<MessageModel>>(
-                    await _messageRepository.GetAllAsync());
+                List<MessageEntity> result = await _messageRepository
+                    .GetAllAsync();
+
+                var messages = _mapper.Map<List<MessageModel>>(result);
 
                 return messages;
             }
@@ -39,18 +41,22 @@
             }
         }
 
-        public async Task<bool> SendMessageAsync(MessageModel messageModel)
+        public async Task<MessageModel> AddMessageAsync(MessageModel messageModel)
         {
             try
             {
-                var result = await _messageRepository.AddAsync(
-                    _mapper.Map<MessageEntity>(messageModel));
+                var messageEntity = _mapper.Map<MessageEntity>(messageModel);
 
-                return result;
+                MessageEntity result = await _messageRepository
+                    .AddAsync(messageEntity);
+
+                var addedMessage = _mapper.Map<MessageModel>(result);
+
+                return addedMessage;
             }
             catch (Exception ex)
             {
-                return await Task.FromException<bool>(ex);
+                return await Task.FromException<MessageModel>(ex);
             }
         }
     }

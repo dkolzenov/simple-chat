@@ -1,5 +1,6 @@
 ﻿namespace SimpleChat.Data.Repositories.Interfaces
 {
+    using System.Linq.Expressions;
     using System.Threading.Tasks;
     using System.Collections.Generic;
 
@@ -7,13 +8,13 @@
     {
         Task<List<TEntity>> GetAllAsync();
 
-        Task<bool> AddAsync(TEntity entity);
+        Task<TEntity> AddAsync(TEntity entity);
 
-        Task<bool> UpdateAsync(TEntity entity);
+        Task<TEntity> UpdateAsync(TEntity entity);
 
-        Task<bool> RemoveAsync(TEntity entity);
+        Task<TEntity> RemoveAsync(TEntity entity);
 
         Task<List<TEntity>> QueryAsync(
-            params Func<TEntity, bool>[] predicates);
+            params Expression<Func<TEntity, bool>>[] predicates);
     }
 }

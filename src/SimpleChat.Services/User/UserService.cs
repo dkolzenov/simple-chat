@@ -26,8 +26,10 @@
         {
             try
             {
-                var users = _mapper.Map<List<UserModel>>(
-                    await _userRepository.GetAllAsync());
+                List<UserEntity> result = await _userRepository
+                    .GetAllAsync();
+
+                var users = _mapper.Map<List<UserModel>>(result);
 
                 return users;
             }
@@ -37,33 +39,41 @@
             }
         }
 
-        public async Task<bool> ConnectAsync(UserModel userModel)
+        public async Task<UserModel> AddUserAsync(UserModel userModel)
         {
             try
             {
-                var result = await _userRepository.AddAsync(
-                    _mapper.Map<UserEntity>(userModel));
+                var userEntity = _mapper.Map<UserEntity>(userModel);
 
-                return result;
+                UserEntity result = await _userRepository
+                    .AddAsync(userEntity);
+
+                var addedUser = _mapper.Map<UserModel>(result);
+
+                return addedUser;
             }
             catch (Exception ex)
             {
-                return await Task.FromException<bool>(ex);
+                return await Task.FromException<UserModel>(ex);
             }
         }
 
-        public async Task<bool> DisconnectAsync(UserModel userModel)
+        public async Task<UserModel> RemoveUserAsync(UserModel userModel)
         {
             try
             {
-                var result = await _userRepository.RemoveAsync(
-                    _mapper.Map<UserEntity>(userModel));
+                var userEntity = _mapper.Map<UserEntity>(userModel);
 
-                return result;
+                UserEntity result = await _userRepository
+                    .RemoveAsync(userEntity);
+
+                var removedTask = _mapper.Map<UserModel>(result);
+
+                return removedTask;
             }
             catch (Exception ex)
             {
-                return await Task.FromException<bool>(ex);
+                return await Task.FromException<UserModel>(ex);
             }
         }
     }

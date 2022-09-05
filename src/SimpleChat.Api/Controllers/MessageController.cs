@@ -9,7 +9,7 @@
     using SimpleChat.Models.Message;
 
     [ApiController]
-    [Route("api/messages")]
+    [Route("api/message")]
     public class MessageController : ControllerBase
     {
         private readonly IMessageService _messageService;

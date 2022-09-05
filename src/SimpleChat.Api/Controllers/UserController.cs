@@ -9,7 +9,7 @@
     using SimpleChat.Models.User;
 
     [ApiController]
-    [Route("api/users")]
+    [Route("api/user")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;

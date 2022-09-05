@@ -1,9 +1,10 @@
 ﻿namespace SimpleChat.Api.Extensions
 {
     using Microsoft.EntityFrameworkCore;
+
     using SimpleChat.Data.Contexts.ApplicationDb;
 
-    public static class DatabaseContextExtension
+    public static class DbContextExtension
     {
         private const string ConnectionStringName = "DefaultConnection";
 
@@ -18,8 +19,8 @@
                 o => o.UseSqlite(connectionString));
 
             services.BuildServiceProvider()
-                .GetService<ApplicationDbContext>()
-                !.Database
+                .GetService<ApplicationDbContext>()!
+                .Database
                 .EnsureCreated();
         }
     }

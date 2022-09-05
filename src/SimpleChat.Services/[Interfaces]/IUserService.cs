@@ -9,8 +9,8 @@
     {
         Task<List<UserModel>> GetAllUsersAsync();
 
-        Task<bool> ConnectAsync(UserModel userModel);
+        Task<UserModel> AddUserAsync(UserModel userModel);
 
-        Task<bool> DisconnectAsync(UserModel userModel);
+        Task<UserModel> RemoveUserAsync(UserModel userModel);
     }
 }

@@ -2,7 +2,7 @@
 
 Desktop application ***currently in developed*** written on [C#](https://docs.microsoft.com/en-us/dotnet/csharp) using [WPF](https://docs.microsoft.com/en-us/dotnet/desktop/wpf) framework and implemented using [N-Layer](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier) architecture. The app provides chat following [REST](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design) conventions.
 
-![Desktop Client](https://github.com/Donat-Kolzenov/simple-chat/blob/main/docs/images/DesktopClient.png) ![User Authorization](https://github.com/Donat-Kolzenov/simple-chat/blob/main/docs/images/UserAuthorization.png)
+![Desktop Client](https://github.com/Donat-Kolzenov/simple-chat/blob/main/docs/images/DesktopClient.png)
 
 ## Technology stack
 

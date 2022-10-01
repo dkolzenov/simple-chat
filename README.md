@@ -6,7 +6,8 @@ Desktop application ***currently in developed*** written on [C#](https://docs.mi
 
 ## Client (front-end)
 
-* [WPF](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/overview)
+* [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* [WPF](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/overview) used as desktop UI framework
 * [Prism 8.1](https://prismlibrary.com) used as Dependency Injection library for views registration
 
 ## Server (back-end)

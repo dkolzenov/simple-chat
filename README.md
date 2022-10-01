@@ -4,7 +4,12 @@ Desktop application ***currently in developed*** written on [C#](https://docs.mi
 
 ![Desktop Client](https://github.com/Donat-Kolzenov/simple-chat/blob/main/docs/images/DesktopClient.png)
 
-## Technology stack
+## Client (front-end)
+
+* [WPF](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/overview)
+* [Prism 8.1](https://prismlibrary.com) used as Dependency Injection library for views registration
+
+## Server (back-end)
 
 * [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 * [ASP.NET Core 6.0](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)

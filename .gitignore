@@ -557,4 +557,7 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Rider ###
+.idea
+
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,csharp
